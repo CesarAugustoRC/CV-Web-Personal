@@ -269,4 +269,18 @@ h3 {
     .experiencia p {
         white-space: normal;
     }
+
+    .dato-lista {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .dato-lista strong {
+        min-width: auto;
+    }
+
+    .dato-lista li {
+        word-break: break-all; 
+        font-size: 0.9rem;
+    }
 }
