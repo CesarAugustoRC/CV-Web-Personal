@@ -1,0 +1,163 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #c2e5ff;
+    margin: 0;
+    padding: 100px 50px; /* Espacio para el encabezado */
+    display: flex;
+    flex-direction: column; /* Apila los recuadros */
+    align-items: center;    /* Los centra */
+    gap: 40px;              /* Espacio entre recuadros */
+}
+
+/* 2. El encabezado (Título principal) */
+header {
+    position: absolute; /* Lo fijamos arriba */
+    top: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+h1 {
+    color: #2c3e50;
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+/* 3. El contenedor principal (Tu tarjeta de CV) */
+informacion {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr; 
+    gap: 30px; /* Espacio entre la foto y el texto */
+    
+    background-color: #ffffff;
+    max-width: 700px;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgb(147, 158, 213);
+    align-items: center; /* Alineación vertical perfecta */
+}
+
+/* 4. Estilo de la Imagen */
+informacion img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px; /* Bordes redondeados suaves */
+    border: 3px solid #3498db; /* Un toque de color azul */
+}
+
+informacion ul {
+    list-style: none; /* Quitamos los puntos */
+    padding: 0;
+    margin: 0;
+}
+
+informacion li {
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.4;
+}
+
+profesional {
+    background-color: #89acd0; /* Fondo azul oscuro */
+    width: 100%;
+    max-width: 700px;
+    padding: 40px;
+    border-radius: 5px 40px;
+    box-shadow: 0 15px 35px rgb(147, 158, 213);
+    margin-top: -20px;
+}
+
+profesional p{
+    font-size: 1.1rem;
+    color: #040a50;
+    line-height: 1.4;
+}
+
+.experiencia {
+    display: flex;
+    align-items: flex-start; 
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.experiencia p {
+    margin: 0;           /* Quitamos margen para que alinee bien con la lista */
+    white-space: nowrap; /* Evita que "Experiencia:" se rompa en dos líneas */
+}
+
+.experiencia ul {
+    margin: 0;
+    padding-left: 20px;  /* Espacio para los puntitos */
+    list-style: disc;    /* Asegura que se vean las viñetas */
+}
+
+.experiencia li {
+    margin-bottom: 8px;
+    color: #040a50;
+}
+
+conocimientos {
+    background-color: #89acd0;
+    width: 100%;
+    max-width: 700px;
+    padding: 40px;
+    border-radius: 5px 40px;
+    box-shadow: 0 15px 35px rgb(147, 158, 213);
+    
+    /* Grid para organizar las habilidades en dos columnas si hay espacio */
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px;
+}
+
+conocimientos h2 {
+    grid-column: 1 / -1; 
+    color: #040a50;
+    border-bottom: 2px solid #040a50;
+}
+
+.habilidad-grid {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    gap: 15px;
+    align-items: center;
+}
+
+.logo-lenguaje {
+    width: 35px;
+}
+
+.info-progreso span {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #1523c3;
+}
+
+.barra-fondo {
+    /*background-color: rgba(255, 255, 255, 0.3); */
+    background-color: #5ef5f745;
+    height: 8px;
+    border-radius: 5px;
+}
+
+.nivel {
+    background-color: #1523c3; /* Color sólido para el nivel */
+    height: 100%;
+    border-radius: 5px;
+}
+
+
+h2 {
+    color: #3498db;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+}
+
+strong {
+    color: #2c3e50; /* Resalta las etiquetas como "Nombre:" */
+}
