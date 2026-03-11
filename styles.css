@@ -72,6 +72,10 @@ profesional p{
     line-height: 1.4;
 }
 
+profesional strong {
+    color: #2c3e50;
+}
+
 .experiencia {
     display: flex;
     align-items: flex-start; 
@@ -143,6 +147,52 @@ conocimientos h2 {
     border-radius: 5px;
 }
 
+otros{
+    background-color: #89acd0;
+    width: 100%;
+    max-width: 700px;
+    padding: 40px;
+    border-radius: 5px 40px;
+    box-shadow: 0 15px 35px rgb(147, 158, 213);
+}
+
+.relevantes {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.dato {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.dato img {
+    width: 35px;
+    height: auto;
+}
+
+.dato p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.norelevantes {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-top: -30px;
+}
+
+otros p{
+    color: #1b259c;
+}
+
+otros strong {
+    color: #1b259c;
+}
 
 h2 {
     color: #3498db;
@@ -153,11 +203,14 @@ h2 {
     padding-bottom: 5px;
 }
 
-strong {
-    color: #2c3e50;
+h3 {
+    color: #2b80b9;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     
     body {
         padding: 80px 15px;
