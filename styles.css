@@ -157,7 +157,7 @@ strong {
     color: #2c3e50;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
     
     body {
         padding: 80px 15px;
