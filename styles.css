@@ -156,3 +156,39 @@ h2 {
 strong {
     color: #2c3e50;
 }
+
+@media (max-width: 600px) {
+    
+    body {
+        padding: 80px 15px;
+    }
+
+    header h1 {
+        font-size: 1.4rem;
+        padding: 0 10px;
+    }
+
+    informacion {
+        grid-template-columns: 1fr; 
+        padding: 20px;
+        text-align: center; 
+    }
+
+    informacion img {
+        max-width: 150px; 
+        margin: 0 auto;
+    }
+
+    conocimientos {
+        grid-template-columns: 1fr; 
+        padding: 20px;
+    }
+    .experiencia {
+        flex-direction: column; 
+        gap: 5px;
+    }
+
+    .experiencia p {
+        white-space: normal;
+    }
+}
